@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo Fa.png" class="Logo Fa">
+                <ul>
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="Biodata">Biodata</a></li>
+                    <li><a href="Experience">Experience</a></li>
+                    <li><a href="Education">Education</a></li>
+                    <li><a href="Family">Family</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>University Student</p>
+                <h1>Hi, I'm Faiqah Najwa</h1>
+            </div>
+        </div>
+     </div>
+     <!------------------------Biodata------------------------->
+     <div id="Biodata">
+        <div class="container">
+            <div class="row">
+                <div class="Biodata-col-1">
+                    <img src="images/Faiqah1.jpg">
+                </div>
+                <div class="Biodata-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Nur Faiqah Najwa binti Zolkifli, student ID is 2021820108. Im currently studying in program BA250 Faculty of Business and Management
+                    .My group is BA2503B and this subject code is IMS456 which is Basic Web Design and Content Management.</p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('family')">Family</p>
+                    <p class="tab-links" onclick="opentab('gallery')">Gallery</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>UI?UX</span><br> Greeted all customers and provided excellent customer service</li>
+                        <li><span>Telco Promoter</span><br> Demonstrate and explain products and services (SIM Card, Postpaid or Prepaid plan)
+                         to prospective customers and persuade them to buy or utilize services</li>
+                        <li><span>Phone Sales Representative</span><br> Contacting potential or existing customers to inform them about a product or service using scripts.
+                         Answering questions about products or the company. Asking questions to understand customer requirements and close sales.</li>
+                        <li><span>Tutor</span><br> helping students learn and understand new concepts and complete assignments</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul><table>
+                        <h3 class="sub-title">Education Background</h>
+                        <tr>
+                            <th>Number:</th>
+                            <th>School/University:</th>
+                            <th>Years:</th>
+                            <th>Result:</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Sekolah Kebangsaan Bukit Bayas</td>
+                            <td>2006-2012</td>
+                            <td>4A 1B-(UPSR)</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sekolah Menengah Kebangsaan Tengku Bariah</td>
+                            <td>2013-2017</td>
+                            <td>1A 2A- 1C+ 2C 1B+ 2D-(SPM)</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sekolah Menengah Kebangsaan Sultan Sulaiman</td>
+                            <td>2019-2020</td>
+                            <td>PNGK:2.92-(STPM)</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>UiTM Kelantan Campus Kota Bharu</td>
+                            <td> 2021-2024</td>
+                            <td>4.00 CGPA</td>
+                        </tr>
+                    </div>
+                    </table>
+                    </ul>
+                    <div class="tab-contents" id="Family">
+                            <ul>
+                                <h2 class="sub-title">My Family</h2>
+                            <p>This is my lovely and harmony family. My father's name is Zolkifli bin Mohamad and my mother's name is Maimun binti Jusoh.
+                                We are six siblings which are Nur Farahin, Nur fatira, Syamsul, Nur Fatehah, Nur Fatini and Nur Faiqah Najwa. I am the youngest
+                                in the family. My brother are happily married with one son and that made me an aunt of one niece. One of my sister also recently married
+                                which is Nur Fatira. I am happy and grateful that this is my family. My family has always become my backbone and motivates me 
+                                in my process in achieving my dream. I definitely have big dreams and goals that i want to achieve one day. After sees how my sisters
+                                become successful in their career, it encourage me walk toward my goals. My family also have work hard in raising me and my siblings.
+                                I want to pay off their hard work with my success one day. I will always put my family first as priority before anything else</p>
+                            <img src="images/family.jpg">
+                           
+                            </ul>
+                    </div>
+                    <div class="tab-contents" id="gallery">
+                        <h4 class="sub-title">My Gallery</h4>
+                            <img src="images/gallery1.png">
+                        </ul>
+                    </div>
+                </div>  
+            </div>   
+        </div> 
+    </div>   
+
+
+                   
+                   
+     <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+     </script>
+     
+    </body>
+    </html>
+
+        
+                
+                    
+                        
+                    
+
+                    
